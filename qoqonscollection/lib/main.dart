@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qoqonscollection/menu.dart';
-
+import 'package:qoqonscollection/screens/menu.dart';
 void main() {
   runApp(const MyApp());
 }
