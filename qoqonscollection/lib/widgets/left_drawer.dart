@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qoqonscollection/screens/list_product.dart';
 import 'package:qoqonscollection/screens/menu.dart';
 import 'package:qoqonscollection/screens/qoqonscollection_form.dart';
 
@@ -51,7 +52,7 @@ class LeftDrawer extends StatelessWidget {
             ),
             ListTile(
               leading: const Icon(Icons.add_shopping_cart),
-              title: const Text('Tambah Item'),
+              title: const Text('Tambah Produk'),
               // Bagian redirection ke ShopFormPage
               onTap: () {
                 Navigator.push(
@@ -60,6 +61,17 @@ class LeftDrawer extends StatelessWidget {
                 );
               },
             ),
+            ListTile(
+              leading: const Icon(Icons.shopping_basket),
+              title: const Text('Daftar Produk'),
+              onTap: () {
+                  // Route menu ke halaman produk
+                  Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProductPage()),
+                  );
+              },
+          ),
         ],
       ),
     );

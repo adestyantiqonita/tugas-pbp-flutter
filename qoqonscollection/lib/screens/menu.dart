@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:qoqonscollection/widgets/left_drawer.dart';
-
-import '../widgets/shop_card.dart';
+import 'package:qoqonscollection/widgets/shop_card.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({Key? key}) : super(key: key);
 
   final List<ShopItem> items = [
-    ShopItem("Lihat Item", Icons.checklist),
-    ShopItem("Tambah Item", Icons.add_shopping_cart),
+    ShopItem("Lihat Produk", Icons.checklist),
+    ShopItem("Tambah Produk", Icons.add_shopping_cart),
     ShopItem("Logout", Icons.logout),
   ];
 
